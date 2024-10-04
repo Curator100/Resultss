@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Marvel Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="4.png" class="background-image" alt="Background Image">
+    </div>
+    <div class="container">
+        <h1>Marvel Hero Quiz</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <div class="scale" id="scale"></div>
+            <input type="number" id="answer" min="0" max="10" placeholder="0-10">
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2 id="percentage"></h2>
+            <p id="note"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
